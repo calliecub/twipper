@@ -17,6 +17,10 @@ class TweetsController < ApplicationController
 		render 'new'
 	end
 
+	def newsfeed
+		@tweets = Tweet.all
+	end
+
 	private
 
 	def tweet_params
